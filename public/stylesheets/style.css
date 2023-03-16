@@ -3,11 +3,11 @@
   --light-blue: #b9d4db;
   --dark-orange: #e9765b;
   --light-orange: #f2a490;
-  --dark-pink: #de5b6d;
+  --dark-pink: #d19c97;
   --green: #18a558;
   --ivory: #f9f7f4;
   --black: #202020;
-  --dark-gray: #474747;
+  --dark-gray: #478ba2;
 }
 * {
   margin: 0px;
@@ -88,7 +88,7 @@ a:hover,
 /* CATEGORIES NAVBAR */
 
 .navbar-custom {
-  background-color: var(--dark-blue);
+  background-color: var(--dark-pink);
 }
 
 .navbar-custom .navbar-brand,
@@ -99,7 +99,7 @@ a:hover,
 
 .navbar-custom .nav-item .nav-link:hover,
 .navbar-custom .nav-item.active .nav-link {
-  color: var(--light-blue) !important;
+  color: var(--black) !important;
 }
 
 /* SEARCH BOX */
@@ -474,4 +474,11 @@ footer {
     width: 150px;
     height: 150px;
   }
+}
+
+
+
+
+#rahul{
+  background-color: #edf1ff;
 }

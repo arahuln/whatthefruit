@@ -163,8 +163,8 @@ const adminBro = new AdminBro({
 });
 
 const ADMIN = {
-  email: 'abcd@gmail.com',
-  password: 'abcd',
+  email: 'banda@gmail.com',
+  password: 'banda',
 };
 
 const router = AdminBroExpress.buildAuthenticatedRouter(adminBro, {

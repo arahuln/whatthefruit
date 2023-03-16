@@ -37,6 +37,8 @@
     ></script>
 
     <link rel="stylesheet" href="/stylesheets/style.css" />
+    <!-- <link rel="stylesheet" href="/stylesheets/style2.css" /> -->
+
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -46,12 +48,35 @@
       href="https://api.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.css"
       rel="stylesheet"
     />
+
+    <style>
+      #home-img{
+        /* background-color: black; */
+        opacity: 0.5;
+
+      }
+      #ull{
+        background-color: black;
+      }
+    </style>
   </head>
 
   <body>
     <div id="page-container">
       <div id="content-wrap">
     <div class="row nav-container mx-auto">
+
+
+      <div class="float:left;">
+      <div class="col-md-4 col-sm-12 col-xs-12 logo-container">
+        <a href="/">
+          <img class="logo-img img-fluid" src="/images/logo.jpeg" alt="logo" />
+          <h4 class="logo-title">Whatthefruit</h4>
+        </a>
+      </div>
+      </div>
+
+      
       <div class="col-md-4 col-sm-12 col-xs-12">
         <div class="search-container">
           <form class="form-inline" action="/products/search" method="GET">
@@ -65,19 +90,14 @@
         </div>
       </div>
 
-      <div class="col-md-4 col-sm-12 col-xs-12 logo-container">
-        <a href="/">
-          <img class="logo-img img-fluid" src="/images/logo.jpeg" alt="logo" />
-          <h4 class="logo-title">Whatthefruit</h4>
-        </a>
-      </div>
+      
 
       <div class="col-md-4 col-sm-12 col-xs-12 right-nav">
         <ul>
           <li>
-            <a href="/shopping-cart">
-              <i class="fas fa-shopping-cart"></i> <% if(session.cart) { %>
-              <span class="badge badge-pill badge-info"
+            <a href="/shopping-cart" >
+              <i class="fas fa-shopping-cart text-secondary"></i> <% if(session.cart) { %>
+              <span class="badge badge-pill badge-info" 
                 ><%= session.cart.totalQty %></span
               >
               <% } else { %>

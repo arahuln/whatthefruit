@@ -23,7 +23,7 @@
               <a
               href="/products/<%=product.category.slug%>/<%=product._id%>"
             >
-              <img src="<%=product.imagePath%>" class="img-small image-fluid" alt="image thumbnail" />
+              <img src="<%=product.imagePath%>" class="img-small image-fluid" alt="image thumbnail" width="100px";height="100px"; />
               </a>
             </td>
             <td>
@@ -37,21 +37,28 @@
               
               </a>
             </td>
-            <td class="text-center">
-              <a href="/add-to-cart/<%=product._id%>"
-                ><i class="fa fa-plus-square" aria-hidden="true"></i
-              > </a>
+            
+
+
+
+            <td class="text-center" >
+              <a href="/reduce/<%=product._id%>"
+                ><i class="fa fa-minus-square" aria-hidden="true"></i
+              ></a>
             </td>
             <td class="text-center">
               <p class="qty-display pt-1">
               <%= product.qty %>
             </p>
           </td>
-            <td class="text-center" >
-              <a href="/reduce/<%=product._id%>"
-                ><i class="fa fa-minus-square" aria-hidden="true"></i
-              ></a>
-            </td>
+          <td class="text-center">
+            <a href="/add-to-cart/<%=product._id%>"
+              ><i class="fa fa-plus-square" aria-hidden="true"></i
+            > </a>
+          </td>
+
+
+            
             <td>₹<%= product.price %></td>
             <td>₹<%= product.totalPrice %></td>
             <td>
