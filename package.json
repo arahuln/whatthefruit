@@ -2,12 +2,12 @@
   "name": "ecommerce-nodejs-website",
   "version": "1.0.0",
   "main": "app.js",
-  "description": "A virtual ecommerce website using Node js, Express js, and Mongoose.",
+  "description": "Nodejs,ejs,mongoose.",
   "scripts": {
     "start": "nodemon app.js"
   },
-  "author": "Maryam Aljanabi",
-  "license": "MIT",
+  "author": "Angothu Rahul Naik",
+  "license": "IIT",
   "dependencies": {
     "admin-bro": "^2.9.0",
     "admin-bro-expressjs": "^2.1.1",
